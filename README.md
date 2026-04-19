@@ -1,10 +1,10 @@
 # student-grade-manager
 
-Sistema de gestión de notas estudiantiles en consola, desarrollado en Python con arquitectura por capas y cobertura completa de tests.
+Proyecto enfocado en demostrar fundamentos de ingeniería de software en Python: arquitectura por capas, desacoplamiento, lógica pura testeable y persistencia controlada.
 
 ---
 
-## ¿Qué hace?
+## Funcionalidad
 
 Permite registrar estudiantes y sus notas desde la terminal, calculando promedios automáticamente y determinando si cada estudiante aprueba o reprueba. Los datos se persisten en un archivo JSON local, por lo que sobreviven al cierre del programa.
 
@@ -26,6 +26,27 @@ Operaciones disponibles: **crear, leer, actualizar y eliminar** estudiantes (CRU
 ```
 UI  →  Service  →  Logic  →  Data
 ```
+
+## Valor técnico
+
+Este proyecto no es solo un CRUD. Está diseñado para demostrar:
+
+- Separación de responsabilidades (arquitectura por capas)
+- Desacoplamiento entre lógica, persistencia y presentación
+- Código testeable mediante funciones puras
+- Manejo de errores en persistencia
+- Diseño escalable (facilita migración a base de datos o API)
+
+## Escalabilidad
+
+El diseño permite evolucionar fácilmente a:
+
+- API REST (por ejemplo con Flask)
+- Base de datos (reemplazando JSON)
+- Interfaz web
+
+Sin modificar la lógica principal.
+
 
 | Capa | Archivo | Responsabilidad |
 |---|---|---|
@@ -58,7 +79,7 @@ student-grade-manager/
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/student-grade-manager.git
+git clone https://github.com/MaauPaau/student-grade-manager.git
 cd student-grade-manager
 
 # Correr los tests primero
