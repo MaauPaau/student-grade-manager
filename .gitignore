@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+estudiantes.json
+venv/
+.env/
+.vscode/
+.DS_Store
